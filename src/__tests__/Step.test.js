@@ -15,12 +15,12 @@ describe('Компонент Step', () => {
         expect(wrapper.find('.step')).toHaveLength(1);
       });
 
-      it('step__number', () => {
-        expect(wrapper.find('.step__number')).toHaveLength(1);
+      it('step-number', () => {
+        expect(wrapper.find('.step-number')).toHaveLength(1);
       });
 
-      it('step__title', () => {
-        expect(wrapper.find('.step__title')).toHaveLength(1);
+      it('step-title', () => {
+        expect(wrapper.find('.step-title')).toHaveLength(1);
       });
     });
 
@@ -42,12 +42,12 @@ describe('Компонент Step', () => {
       expect(wrapper.find('.step.step-clickable')).toHaveLength(1);
     });
 
-    it('Тег с классом step__number должен содержать номер переданный через props number', () => {
-      expect(wrapper.find('.step__number').text()).toEqual('1');
+    it('Тег с классом step-number должен содержать номер переданный через props number', () => {
+      expect(wrapper.find('.step-number').text()).toEqual('1');
     });
 
-    it('Тег с классом step__title должен содержать текст переданный через children', () => {
-      expect(wrapper.find('.step__title').text()).toEqual('test string');
+    it('Тег с классом step-title должен содержать текст переданный через children', () => {
+      expect(wrapper.find('.step-title').text()).toEqual('test string');
     });
   });
 

@@ -1,22 +1,38 @@
 .container {
-  width: 100%; }
+  margin: 50px;
+  width: 400px;
+  border: 1px solid #4a67b1;
+  padding: 20px;
+}
 
 .tab-panel {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .form-content {
-  padding: 0 20px; }
+  padding: 0 20px;
+}
 
 .button-panel {
   padding: 10px 20px;
-  display: flex; }
+  display: flex;
+}
 
 .button-next {
   margin-left: auto;
-  background-color: blue;
-  color: white; }
+  background-color: #5a75ba;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;  
+}
 
 .button-next:disabled {
   background-color: #eee;
-  color: black; }
+  color: black;
+}
+
+body {
+  background-color: #e9ebee;
+}

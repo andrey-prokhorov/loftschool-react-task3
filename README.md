@@ -67,12 +67,12 @@
     Рендер
       ✓ Если props isSelected=true должен присутствовать элемент с классом step-selected
       ✓ Если props isClickable=true, должен присутствовать класс step-clickable вместе с классом step
-      ✓ Тег с классом step__number должен содержать номер переданный через props number
-      ✓ Тег с классом step__title должен содержать текст переданный через children
+      ✓ Тег с классом step-number должен содержать номер переданный через props number
+      ✓ Тег с классом step-title должен содержать текст переданный через children
       Должен присутствовать элемент с классом
         ✓ step
-        ✓ step__number
-        ✓ step__title
+        ✓ step-number
+        ✓ step-title
     Методы класса
       handleClick
         ✓ Должен присутствовать метод handleClick

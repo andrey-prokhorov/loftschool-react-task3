@@ -359,12 +359,12 @@ describe('Компонент App', () => {
           onChangeTimeOver: wrapper.instance().handleChangeTimeOver
         });
       });
-      it(`Если state.step === 3 возвращает строку 'Поздравляем!'`, () => {
+      it(`Если state.step === 3 возвращает строку 'You are done with the form, thank you!'`, () => {
         const wrapper = shallow(<App />);
         wrapper.setState({
           step: 3
         });
-        expect(wrapper.instance().renderForm()).toEqual('Поздравляем!');
+        expect(wrapper.instance().renderForm()).toEqual('You are done with the form, thank you!');
       });
     });
   });
