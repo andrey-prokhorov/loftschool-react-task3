@@ -7,9 +7,9 @@ import Step from "./Step";
 class App extends Component {
   state = {
     step: 1,
-    firstName: "Maria",
-    lastName: "Bullensson",
-    email: "maria@bu.com",
+    firstName: "",
+    lastName: "",
+    email: "",
     cardNumber: "",
     isTimeOver: false
   };
@@ -90,10 +90,6 @@ class App extends Component {
     this.setState({ step });
   };
 
-  // isButtonNextVisible = () => {
-  //   return !this.isFormCommitable() || this.state.isTimeOver    
-  // }
-
   render() {
     const { step } = this.state;
 
@@ -104,9 +100,9 @@ class App extends Component {
             <Step
               onClick={this.handleTabClick}
               isSelected={step === index + 1}
-              key={index}
+              key={this.stepTitles[index]}
               number={index + 1}
-              isClickable={index > 0}
+              isClickable={index + 1 < step}
             >
               {this.stepTitles[index]}
             </Step>
@@ -118,8 +114,7 @@ class App extends Component {
           <button
             className="button-next"
             onClick={this.handleClickNextForm}
-            disabled={!this.isFormCommitable() || this.state.isTimeOver}
-            //style={{visibility: this.isButtonNextVisible ? 'visible' : 'hidden' }}              
+            disabled={!this.isFormCommitable() || this.state.isTimeOver}            
           >
             Next
           </button>

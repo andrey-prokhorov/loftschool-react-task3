@@ -37,7 +37,7 @@ export class CardForm extends Component {
     return (
       <div className="card-form">
         <Title>Card number</Title>
-        <input name="cardNumber" value={this.props.cardNumber} onChange={this.handleChangeForm} />
+        <input name="cardNumber" value={this.props.cardNumber} onChange={this.handleChangeForm} placeholder="0000000000000000" />
         <p className="left-time">You have {leftTime} seconds to fill in the form</p>
       </div>
     );
